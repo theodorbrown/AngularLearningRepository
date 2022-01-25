@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-shared-btn',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SharedBtnComponent implements OnInit {
 
+  @Input() text:string ='';
   constructor() { }
 
   ngOnInit(): void {

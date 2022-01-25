@@ -1,0 +1,84 @@
+<mat-card class="">
+    <mat-card-title>S'inscrire</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="col-sm-auto">
+                    <mat-form-field>
+                        <mat-label>Nom</mat-label>
+                        <input matInput type="text" formControlName="nom" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-auto">
+                    <mat-form-field>
+                        <mat-label>Prénom</mat-label>
+                        <input matInput type="text" formControlName="prenom" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-auto">
+                    <mat-form-field>
+                        <mat-label>Type de client</mat-label>
+                        <mat-select formControlName="type" required>
+                            <mat-option value="Particulier">Particulier</mat-option>
+                            <mat-option value="Professionnel">Professionnel</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-auto">
+                    <mat-form-field>
+                        <mat-label>Mot de passe</mat-label>
+                        <input matInput type="text" formControlName="pass" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-auto">
+                    <mat-form-field style="width: 150px;">
+                        <mat-label>Tel</mat-label>
+                        <input matInput type="text" formControlName="tel" required>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-auto">
+                    <mat-form-field style="width: 300px;">
+                        <mat-label>Adresse mail</mat-label>
+                        <input matInput type="email" formControlName="email" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-auto">
+                    <mat-form-field>
+                        <mat-label>Ville</mat-label>
+                        <input matInput type="text" formControlName="ville" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-auto">
+                    <mat-form-field style="width: 100px;">
+                        <mat-label>CP</mat-label>
+                        <input matInput type="number" min="00000" max="99999" formControlName="cp" required>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-auto">
+                    <mat-form-field style="width: 300px;">
+                        <mat-label>Adresse</mat-label>
+                        <input matInput type="text" formControlName="adresse" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-auto">
+                    <mat-form-field style="width: 80px;">
+                        <mat-label>N° voie</mat-label>
+                        <input matInput type="number" min="1" max="999" formControlName="n" required>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <app-shared-btn></app-shared-btn>
+
+            <div class="flex-center mt-5">
+                {{ message }}
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,10 @@
+<ng-container *ngIf="user">
+<div class="text-center mt-5">
+    <div>Bienvenue <strong>{{ user.prenom }}</strong>, voici quelques informations concernant ton profil : </div>
+    <p>_________________________</p>
+    <p>Nom de famille : {{ user.nom }}</p>
+    <p>Email : {{ user.email }}</p>
+    <p>Type de compte : {{ user.type }}</p>
+    <p>Numéro de tel. : {{ user.tel | telFormat }}</p>
+</div>
+</ng-container>

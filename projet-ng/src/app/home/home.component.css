@@ -1,0 +1,25 @@
+.center-content-div {
+    align-self: center;
+}
+/* Container holding the image and the text */
+.container-custom {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background: rgb(0, 0, 0, .3);
+    border-radius: 6px;
+    padding: 10px;*/
+}
+
+.img-spec {
+    width:100%;
+    min-height: 400px;
+    max-height: 400px;
+}

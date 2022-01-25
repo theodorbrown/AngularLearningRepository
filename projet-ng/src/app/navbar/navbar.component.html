@@ -1,0 +1,29 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <a class="navbar-brand">OnBikes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" routerLink="">Accueil</a>
+            <a class="nav-item nav-link" routerLink="bikeslist">Catalogue</a>
+            <a class="nav-item nav-link" routerLink="galerie">Galerie</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Compte client
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" *ngIf="isConnected" routerLink="/profil">Mon profil</a>
+                    <a class="dropdown-item" *ngIf="!isConnected" routerLink="/login">Se connecter</a>
+                    <a class="dropdown-item" *ngIf="!isConnected" routerLink="/register">S'inscrire</a>
+                    <a class="dropdown-item" *ngIf="isConnected" (click)="logOutUser()">Se déconnecter</a>
+                </div>
+            </li>
+        </div>
+    </div>
+</nav>
+<div class="">
+    <router-outlet></router-outlet>
+</div>

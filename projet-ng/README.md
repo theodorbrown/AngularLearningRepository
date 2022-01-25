@@ -1,27 +1,15 @@
-# ProjetNg
+# Projet Angular OnBikes
+Projet pour LP-AMIO :
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
+Nous avons développé et utilisé tous les éléments attentus et ajouté du contenu supplémentaire :
 
-## Development server
+1. Mise en place du Routing,
+2. Mise en place du Lazyloading + module,
+3. Utilisation de composants Angular Material supplémentaires : mat-select, mat-card, mat-spinner, mat-dialog, carousel...,
+4. Intégration d'un pipe (formattage du numéro de téléphone dans le profil de l'utilisateur)
+5. Utilisation de formulaire d'inscription/connexion : ReactiveForms,
+6. Mise en place d'un composant générique (mat-button),
+7. Mise en place de services pour appeler notre propre API et pour utiliser le localStorage,
+8. Gestion inscription/connexion/profil.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Theodor Brown & Tieu-Ly Hoang

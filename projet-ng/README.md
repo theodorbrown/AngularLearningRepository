@@ -11,3 +11,5 @@ Nous avons développé et utilisé tous les éléments attentus et ajouté du co
 6. Mise en place d'un composant générique (mat-button),
 7. Mise en place de services pour appeler notre propre API et pour utiliser le localStorage,
 8. Gestion inscription/connexion/profil.
+
+Theodor Brown & Tieu-Ly Hoang
